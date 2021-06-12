@@ -1,0 +1,105 @@
+.section {
+    margin-bottom: 127px;
+}
+
+.section__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 51px;
+}
+
+.section__title--fire::after { 
+    content: url(./img/flame.png); 
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.tours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tours__item {
+    width: calc(100% / 3 - 18px);
+}
+
+.tour {
+    min-height: 449px; /*минимальная высота*/
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.condition__item--calendar::before { 
+    content: url(./img/calendar.png); 
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.condition__item--meal::before { 
+    content: url(./img/meal.png); 
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.tours__item:last-child { /*убрать отступ у последнего элемента*/
+    margin-right: 0;
+}
+
+.tour__info {
+    padding: 22px 22px;
+}
+
+.tour__title {
+    color: black;
+    width: 362px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 21px;
+    padding: 3px 0 0 0;
+}
+
+.condition__item {
+    display: inline-block;
+    width: 140px;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 23px;
+    margin-right: 10px;
+}
+
+.condition__item:last-child {
+margin-right: 0;
+}
+
+.condition__info {
+    font-size: 14px;
+    color: #303030;
+    margin-bottom: 25px;
+}
+
+.tour__btn {
+    background: #fff;
+    border-radius: 35px;
+    border: 1px solid #F5170E;
+    padding: 18px 40px;
+    color:#F5170E;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase; /*текст в верхнем регистре*/
+    display: inline-block;
+    padding: 18px 30px;
+}
+
+.tour__btn:hover {
+    background: #F5170E;
+    color: #fff;
+}
+
+.tour__btn--active {
+    background: #F5170E;
+    color: #fff;
+}
